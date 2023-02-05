@@ -8,7 +8,6 @@ resource "aws_instance" "web" {
   user_data     = <<-EOF
                     #!/bin/bash
                     sudo apt update -y
-                    sudo apt install git -y
                     EOF
 
   tags = {
